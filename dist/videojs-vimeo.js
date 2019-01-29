@@ -2500,7 +2500,7 @@ var Vimeo = function (_Tech) {
   };
 
   Vimeo.prototype.seekable = function seekable() {
-    // Fix 
+    // Fix
     return undefined;
   };
 
@@ -2627,10 +2627,8 @@ Vimeo.nativeSourceHandler.dispose = function () {};
 Vimeo.registerSourceHandler(Vimeo.nativeSourceHandler);
 
 if (typeof Tech.registerTech !== 'undefined') {
-  console.log("Tech.registerTech('Vimeo', Vimeo);");
   Tech.registerTech('Vimeo', Vimeo);
 } else {
-  console.log("Component.registerComponent('Vimeo', Vimeo);");
   Component.registerComponent('Vimeo', Vimeo);
 }
 
