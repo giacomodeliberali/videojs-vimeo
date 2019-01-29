@@ -107,11 +107,7 @@ class Vimeo extends Tech {
             this._vimeoState.progress.buffered = progress.seconds;
           }
         }
-        try{
-          this.trigger(e);
-        }catch(e){
-          console.log(e);
-        }
+        this.trigger(e);
       });
     });
 

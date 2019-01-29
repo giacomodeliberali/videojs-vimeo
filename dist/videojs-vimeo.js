@@ -2428,11 +2428,7 @@ var Vimeo = function (_Tech) {
             _this2._vimeoState.progress.buffered = progress.seconds;
           }
         }
-        try {
-          _this2.trigger(e);
-        } catch (e) {
-          console.log(e);
-        }
+        _this2.trigger(e);
       });
     });
 
@@ -2504,10 +2500,12 @@ var Vimeo = function (_Tech) {
   };
 
   Vimeo.prototype.seekable = function seekable() {
+    // Fix 
     return undefined;
   };
 
   Vimeo.prototype.playbackRate = function playbackRate() {
+    // Fix
     return undefined;
   };
 
