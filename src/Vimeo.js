@@ -165,11 +165,11 @@ class Vimeo extends Tech {
   }
 
   seekable() {
-    // Fix 
+    //Fix 
     return undefined;
   }
 
-  playbackRate(){
+  playbackRate() {
     // Fix
     return undefined;
   }
@@ -228,7 +228,7 @@ class Vimeo extends Tech {
     return this._vimeoState.volume === 0;
   }
 
-  ended() { 
+  ended() {
     return this._vimeoState.ended;
   }
 
@@ -289,10 +289,8 @@ Vimeo.nativeSourceHandler.dispose = function() { };
 Vimeo.registerSourceHandler(Vimeo.nativeSourceHandler);
 
 if (typeof Tech.registerTech !== 'undefined') {
-  console.log("Tech.registerTech('Vimeo', Vimeo);");
   Tech.registerTech('Vimeo', Vimeo);
 } else {
-  console.log("Component.registerComponent('Vimeo', Vimeo);");
   Component.registerComponent('Vimeo', Vimeo);
 }
 
