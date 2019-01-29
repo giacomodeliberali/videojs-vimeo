@@ -165,7 +165,7 @@ class Vimeo extends Tech {
   }
 
   seekable() {
-    //Fix 
+    // Fix
     return undefined;
   }
 
